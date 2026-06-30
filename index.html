@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quantum Principle</title>
+
+<style>
+body {
+  margin:0;
+  background:black;
+  overflow:hidden;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  position:relative;
+  width:100%;
+  height:100vh;
+}
+
+img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* Glow zones */
+.zone {
+  position:absolute;
+  width:90px;
+  height:90px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:20px;
+  text-decoration:none;
+  background:rgba(0,0,0,0.3);
+  cursor:pointer;
+  animation:pulse 2.5s infinite;
+}
+
+/* Glow animation */
+@keyframes pulse {
+  0% { box-shadow:0 0 10px rgba(0,200,255,0.4); }
+  50% { box-shadow:0 0 30px rgba(0,200,255,1); }
+  100% { box-shadow:0 0 10px rgba(0,200,255,0.4); }
+}
+
+/* Positions */
+#z1 { top:35%; left:20%; }
+#z2 { top:30%; left:40%; }
+#z3 { top:30%; left:60%; }
+#z4 { top:35%; left:80%; }
+#z5 { top:55%; left:50%; }
+
+/* Hover effect */
+.zone:hover {
+  transform:scale(1.2);
+  transition:0.3s;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <img src="hero.png" alt="Quantum Diagram">
+
+  <a href="action.html" class="zone" id="z1">1</a>
+  <a href="improvement.html" class="zone" id="z2">2</a>
+  <a href="learning.html" class="zone" id="z3">3</a>
+  <a href="return.html" class="zone" id="z4">4</a>
+  <a href="index.html" class="zone" id="z5">5</a>
+</div>
+
+</body>
+</html>
